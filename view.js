@@ -21,4 +21,16 @@ fetch(url, options)
 //creating a function so that our content is dynamic
 function showPiece(piece) {
   console.log(piece);
+  document.querySelector(".goldphoto").src = piece.url_gold_image;
+  document.querySelector(".silverphoto").src = piece.url_silver_image;
+  document.querySelector(".name").textContent = piece.name;
+  document.querySelector(".category").textContent = piece.category;
+  document.querySelector(".price_gold").textContent = "€" + piece.price_gold;
+  document.querySelector(".paragraph_info").textContent = piece.paragraph_info;
+  document.querySelector(".silver").textContent = "SILVER: " + piece.silver;
+  document.querySelector(".gold_plated").textContent =
+    "GOLD PLATED:" + piece.gold_plated;
+  document.querySelector(".gold").textContent = "GOLD: " + piece.gold;
+  document.querySelector(".circuit").textContent = "CIRCUIT: " + piece.circuit;
+  document.querySelector(".weight").textContent = "WEIGHT: " + piece.weight;
 }

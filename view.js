@@ -21,6 +21,8 @@ fetch(url, options)
 //creating a function so that our content is dynamic
 function showPiece(piece) {
   console.log(piece);
+  document.querySelector(".title").textContent =
+    piece.name + " " + piece.category + " | urtastore";
   document.querySelector(".goldphoto").src = piece.url_gold_image;
   document.querySelector(".silverphoto").src = piece.url_silver_image;
   document.querySelector(".name").textContent = piece.name;

@@ -1,0 +1,166 @@
+html {
+  margin: 0 auto;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.landingphoto {
+  background-image: url("media/landingphoto.png");
+  height: 896px;
+  border-bottom: 1px solid #707070;
+}
+
+.logo {
+  width: 9rem;
+  margin-left: 1rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 2;
+  border-bottom: 1px solid #707070;
+}
+
+ul {
+  list-style-type: none;
+  margin-right: 1rem;
+}
+
+h1 {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.shopnow {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.6rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  background-color: #313532;
+  text-align: center;
+}
+
+.shopnow2 {
+  text-decoration: none;
+  padding: 0.5rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  text-align: center;
+  color: #313532;
+  border: 2px solid #313532;
+}
+
+.space {
+  margin-bottom: 4rem;
+}
+
+.buttonquote {
+  text-align: center;
+  position: relative;
+  top: 10rem;
+}
+
+.secondparthp {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.mainh2 {
+  text-align: center;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #707070;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+.thirdparthp {
+  text-align: center;
+  margin-bottom: 7rem;
+  border-bottom: 1px solid #707070;
+  border-top: 1px solid #707070;
+  padding-bottom: 5rem;
+}
+
+.video {
+  border-bottom: 1px solid #707070;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-left: 2.2rem;
+  margin-right: 2.2rem;
+  line-height: 2rem;
+}
+
+.oneproduct {
+  text-align: center;
+}
+
+.productimg {
+  width: 18.5rem;
+}
+
+.vishnubrahma {
+  font-size: 1.2rem;
+  margin-top: 0;
+  border-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.price {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.theprotector {
+  text-align: center;
+  padding-top: 6rem;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 6rem;
+}
+
+.protecth3 {
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+
+.protecth2 {
+  font-size: 2rem;
+  border-bottom: 0;
+}
+
+.protectprice {
+  font-size: 1.4rem;
+}
+
+.protectimg {
+  width: 24rem;
+}
+
+.lastpart {
+  text-align: center;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  border-bottom: 1px solid #707070;
+}

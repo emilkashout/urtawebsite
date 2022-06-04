@@ -8,6 +8,9 @@ body {
 
 main {
   margin: 2rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .landingphoto {
@@ -27,6 +30,9 @@ nav {
   justify-content: space-between;
   flex-grow: 2;
   border-bottom: 1px solid #707070;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 nav a {
@@ -61,6 +67,9 @@ h1 {
   font-size: 1.1rem;
   text-align: center;
   margin-bottom: 3rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .shopnow {
@@ -71,6 +80,9 @@ h1 {
   padding-right: 1.8rem;
   background-color: #313532;
   text-align: center;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 a.shopnow:hover {
@@ -93,6 +105,9 @@ a.shopnow:active {
   text-align: center;
   color: #313532;
   border: 2px solid #313532;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 a.shopnow2:hover {
@@ -128,6 +143,9 @@ a.shopnow2:active {
   margin-right: 2rem;
   margin-bottom: 0;
   padding-bottom: 1rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .thirdparthp {
@@ -136,6 +154,9 @@ a.shopnow2:active {
   border-bottom: 1px solid #707070;
   border-top: 1px solid #707070;
   padding-bottom: 5rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .video {
@@ -146,6 +167,9 @@ a.shopnow2:active {
 h3 {
   font-size: 1.5rem;
   margin-top: 4rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 p {
@@ -169,18 +193,27 @@ p {
   margin-top: 0;
   border-bottom: 0;
   margin-bottom: 0.5rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .category {
   font-size: 1.1rem;
   margin-top: 1rem;
   margin-bottom: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .price {
   font-size: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .theprotector {
@@ -193,15 +226,24 @@ p {
 .protecth3 {
   font-size: 2.2rem;
   margin-top: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .protecth2 {
   font-size: 2rem;
   border-bottom: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .protectprice {
   font-size: 1.4rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 .protectimg {
@@ -213,12 +255,18 @@ p {
   padding-bottom: 10rem;
   padding-top: 10rem;
   border-bottom: 1px solid #707070;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   border-top: 1px solid #313532;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 footer li {
@@ -272,6 +320,9 @@ h6 {
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .sign {
@@ -286,6 +337,7 @@ h6 {
   background-image: url("media/imgproductlist_mobile.png");
   width: 414px;
   height: 355px;
+  margin: 0 auto;
 }
 
 .pieceslist {

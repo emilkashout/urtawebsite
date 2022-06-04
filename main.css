@@ -164,3 +164,69 @@ p {
   padding-top: 10rem;
   border-bottom: 1px solid #707070;
 }
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer li {
+  font-size: 0.7rem;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a:hover {
+  color: #313532;
+}
+
+.igicon {
+  width: 1.8rem;
+}
+
+.fbicon {
+  width: 1.3rem;
+  margin-top: 0.25rem;
+}
+
+.some {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+}
+
+ul.some {
+  margin: 0 auto;
+  grid-column: 3;
+  padding-left: 0;
+  margin-inline-start: 0px;
+}
+
+.cardicon {
+  width: 1.2rem;
+}
+
+.mail {
+  font-size: 0.7rem;
+  margin-left: 0;
+  margin-right: 0;
+  line-height: normal;
+}
+
+h6 {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.sign {
+  font-size: 0.5rem;
+  margin: 0 auto;
+  align-items: end;
+  margin-inline-start: 0px;
+  padding-inline-start: 40px;
+}

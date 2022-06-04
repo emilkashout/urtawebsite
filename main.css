@@ -151,8 +151,9 @@ p {
   line-height: 2rem;
 }
 
-.oneproduct {
+.onepiece {
   text-align: center;
+  align-items: center;
 }
 
 .productimg {
@@ -274,4 +275,26 @@ h6 {
   align-items: end;
   margin-inline-start: 0px;
   padding-inline-start: 40px;
+}
+
+.imgproductlist {
+  background-image: url("media/imgproductlist_mobile.png");
+  width: 414px;
+  height: 355px;
+}
+
+.pieceslist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-left: 5%;
+  margin-right: 3%;
+}
+
+.shopallinfo {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 1.7rem;
+  color: #ffffff;
+  font-size: 0.9rem;
 }

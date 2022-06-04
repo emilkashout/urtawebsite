@@ -25,6 +25,29 @@ nav {
   border-bottom: 1px solid #707070;
 }
 
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  color: #313532;
+}
+
+.navflex {
+  margin-top: 1rem;
+  display: flex;
+}
+
+.searchicon {
+  width: 1.3rem;
+  margin-right: 0.5rem;
+}
+
+.carticon {
+  width: 1.1rem;
+}
+
 ul {
   list-style-type: none;
   margin-right: 1rem;
@@ -46,6 +69,18 @@ h1 {
   text-align: center;
 }
 
+a.shopnow:hover {
+  color: #313532;
+  background-color: #ffffff;
+  border: 2px solid #313532;
+}
+
+a.shopnow:active {
+  color: #313532;
+  background-color: #e7e7e7;
+  border: 2px solid #313532;
+}
+
 .shopnow2 {
   text-decoration: none;
   padding: 0.5rem;
@@ -54,6 +89,16 @@ h1 {
   text-align: center;
   color: #313532;
   border: 2px solid #313532;
+}
+
+a.shopnow2:hover {
+  color: #ffffff;
+  background-color: #313532;
+}
+
+a.shopnow2:active {
+  color: #ffffff;
+  background-color: #4a4d4b;
 }
 
 .space {

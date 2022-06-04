@@ -6,6 +6,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+  margin: 2rem;
+}
+
 .landingphoto {
   background-image: url("media/landingphoto.png");
   height: 896px;
@@ -214,6 +218,7 @@ p {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border-top: 1px solid #313532;
 }
 
 footer li {
@@ -297,4 +302,8 @@ h6 {
   padding-top: 1.7rem;
   color: #ffffff;
   font-size: 0.9rem;
+}
+
+.hallmarkschart {
+  font-size: 2rem;
 }

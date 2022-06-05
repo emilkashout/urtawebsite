@@ -13,6 +13,12 @@ main {
   font-style: normal;
 }
 
+#listmainmargin {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
 .landingphoto {
   background-image: url("media/landingphoto.png");
   height: 896px;
@@ -198,6 +204,16 @@ p {
   font-style: italic;
 }
 
+.vishnubrahmaview {
+  font-size: 1.8rem;
+  margin-top: 0;
+  border-bottom: 0;
+  margin-bottom: 0.5rem;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
 .category {
   font-size: 1.1rem;
   margin-top: 1rem;
@@ -207,10 +223,30 @@ p {
   font-style: italic;
 }
 
+.categoryview {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #707070;
+}
+
 .price {
   font-size: 1rem;
   margin-top: 0.5rem;
   margin-bottom: 0;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.priceview {
+  font-size: 1.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0rem;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -340,14 +376,6 @@ h6 {
   margin: 0 auto;
 }
 
-.pieceslist {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-left: 5%;
-  margin-right: 3%;
-}
-
 .shopallinfo {
   text-align: center;
   margin-top: 0;
@@ -358,4 +386,63 @@ h6 {
 
 .hallmarkschart {
   font-size: 2rem;
+}
+
+.imgcharts {
+  max-width: 100%;
+  text-align: center;
+}
+
+.goldphoto .silverphoto {
+  max-width: 100%;
+}
+
+.viewinfo p {
+  margin-left: 0;
+  font-size: 1.5rem;
+}
+
+.viewinfo ul li {
+  font-size: 1.3rem;
+}
+
+.lastinfo p {
+  margin-left: 0;
+  font-size: 1.3rem;
+}
+
+button {
+  color: #3b3b3b;
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #707070;
+  font-size: 1rem;
+}
+
+.buttonsgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.addtocart {
+  grid-column: 1 / span 2;
+  background-color: #313533;
+  color: #ffffff;
+}
+
+.addtocart:hover {
+  color: #3b3b3b;
+  background-color: #ffffff;
+}
+
+.addtocart:active {
+  color: #3b3b3b;
+  background-color: #dedede;
 }

@@ -23,6 +23,12 @@ main {
   background-image: url("media/landingphoto.png");
   height: 896px;
   border-bottom: 1px solid #707070;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
 }
 
 .logo {
@@ -163,6 +169,15 @@ a.shopnow2:active {
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: italic;
+}
+
+.handsphoto {
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
 }
 
 .video {
@@ -445,4 +460,31 @@ button {
 .addtocart:active {
   color: #3b3b3b;
   background-color: #dedede;
+}
+
+@media (min-width: 1920px) {
+  .landingphoto {
+    background-image: url("media/landingphoto_1920px.png");
+    height: 1080px;
+  }
+  .logo {
+    width: 15rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  nav {
+    display: block;
+    border-bottom: 1px solid #707070;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .landingphoto {
+    background-image: url("media/landingphoto_601px.png");
+    height: 962px;
+  }
 }

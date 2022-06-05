@@ -21,13 +21,13 @@ fetch(url, options)
 //creating a function so that our content is dynamic
 function showPiece(piece) {
   console.log(piece);
-  document.querySelector(".title").textContent =
+  document.querySelector("title").textContent =
     piece.name + " " + piece.category + " | urtastore";
   document.querySelector(".goldphoto").src = piece.url_gold_image;
   document.querySelector(".silverphoto").src = piece.url_silver_image;
-  document.querySelector(".name").textContent = piece.name;
-  document.querySelector(".category").textContent = piece.category;
-  document.querySelector(".price_gold").textContent = "€" + piece.price_gold;
+  document.querySelector(".vishnubrahmaview").textContent = piece.name;
+  document.querySelector(".categoryview").textContent = piece.category;
+  document.querySelector(".priceview").textContent = "€" + piece.price_gold;
   document.querySelector(".paragraph_info").textContent = piece.paragraph_info;
   document.querySelector(".silver").textContent = "SILVER: " + piece.silver;
   document.querySelector(".gold_plated").textContent =

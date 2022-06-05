@@ -465,7 +465,67 @@ button {
   background-color: #dedede;
 }
 
-@media (min-width: 1800px) {
+.aboutphoto1 {
+  background-image: url("media/aboutphoto1_mobile.png");
+  width: 414px;
+  height: 600px;
+}
+
+.aboutphoto1bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 3.5rem;
+}
+
+.aboutphoto2bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 1.8rem;
+}
+
+.aboutphoto3bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 11rem;
+}
+
+.aboutphoto4bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 11rem;
+}
+
+.aboutphoto2 {
+  background-image: url("media/aboutphoto2_mobile.png");
+  width: 414px;
+  height: 600px;
+}
+
+.aboutphoto3 {
+  background-image: url("media/aboutphoto3_mobile.png");
+  width: 414px;
+  height: 600px;
+}
+
+.aboutphoto4 {
+  background-image: url("media/aboutphoto4_mobile.png");
+  width: 414px;
+  height: 600px;
+}
+
+@media (min-width: 1024px) {
   .landingphoto {
     background-image: url("media/landingphoto_1920px.png");
     height: 1080px;

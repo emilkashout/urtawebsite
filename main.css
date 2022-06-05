@@ -23,6 +23,11 @@ main {
   background-image: url("media/landingphoto.png");
   height: 896px;
   border-bottom: 1px solid #707070;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
 }
 
 .logo {
@@ -165,6 +170,15 @@ a.shopnow2:active {
   font-style: italic;
 }
 
+.handsphoto {
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
+}
+
 .video {
   border-bottom: 1px solid #707070;
   text-align: center;
@@ -254,7 +268,7 @@ p {
 
 .theprotector {
   text-align: center;
-  padding-top: 6rem;
+  padding-top: 0rem;
   border-bottom: 1px solid #707070;
   padding-bottom: 6rem;
 }
@@ -374,6 +388,10 @@ h6 {
   width: 414px;
   height: 355px;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 100%;
 }
 
 .shopallinfo {
@@ -446,3 +464,199 @@ button {
   color: #3b3b3b;
   background-color: #dedede;
 }
+
+@media (min-width: 1800px) {
+  .landingphoto {
+    background-image: url("media/landingphoto_1920px.png");
+    height: 1080px;
+  }
+  .logo {
+    width: 15rem;
+    margin-left: 1rem;
+    text-align: right;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #707070;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.2rem;
+  }
+
+  .searchicon {
+    width: 2.7rem;
+    margin-right: 2.5rem;
+  }
+
+  .carticon {
+    width: 2.1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  .shopnow {
+    font-size: 2rem;
+  }
+  .buttonquote {
+    text-align: center;
+    position: relative;
+    top: 8rem;
+    width: 800px;
+    left: 55%;
+  }
+
+  .mainh2 {
+    font-size: 4rem;
+
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+  .secondparthpgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 12rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+    margin-top: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    line-height: 4rem;
+  }
+
+  .productimg {
+    width: 30rem;
+  }
+
+  .vishnubrahma {
+    font-size: 2.6rem;
+  }
+
+  .category {
+    font-size: 2.5rem;
+  }
+
+  .price {
+    font-size: 2.3rem;
+  }
+  .thirdparthp {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding-bottom: 0;
+  }
+
+  .lastpart {
+    padding-top: 5rem;
+  }
+
+  .shopnow2 {
+    font-size: 2rem;
+  }
+
+  footer li {
+    font-size: 1.2rem;
+  }
+  .igicon {
+    width: 2.2rem;
+  }
+
+  .fbicon {
+    width: 1.7rem;
+    margin-top: 0.25rem;
+  }
+  div.some {
+    margin-bottom: 1.5rem;
+  }
+  .cardicon {
+    width: 1.5rem;
+  }
+
+  .mail {
+    font-size: 1.2rem;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: normal;
+  }
+
+  h6 {
+    font-size: 1.1rem;
+  }
+
+  .sign {
+    font-size: 0.9rem;
+    margin: 0 auto;
+    align-items: end;
+    margin-inline-start: 0px;
+    padding-inline-start: 40px;
+  }
+
+  .theprotector {
+    text-align: left;
+    padding-top: 0.5rem;
+
+    padding-bottom: 4rem;
+  }
+
+  .protecth3 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .protecth2 {
+    font-size: 2.6rem;
+    border-bottom: 0;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .protectprice {
+    font-size: 2.3rem;
+  }
+
+  .protectimg {
+    width: 30rem;
+  }
+
+  .imgproductlist {
+    background-image: url("media/imgproductlist_desktop.png");
+    width: 1920px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  .shopallinfo {
+    padding-top: 4.5rem;
+    color: #ffffff;
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+  .landingphoto {
+    background-image: url("media/landingphoto_601px.png");
+    height: 962px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media (min-width: );

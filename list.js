@@ -30,6 +30,7 @@ function handleData(pieces) {
     copy.querySelector("h2").textContent = piece.name;
     copy.querySelector("h3").textContent = piece.category;
     copy.querySelector("h4").textContent = "€" + piece.price_gold;
+    copy.querySelector("a").href += piece._id;
     //grab parent
     const parent = document.querySelector("main");
     //append it

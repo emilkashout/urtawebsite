@@ -341,6 +341,15 @@ footer a:hover {
   margin-top: 0.25rem;
 }
 
+.fbicon2 {
+  width: 1.8rem;
+}
+
+.igicon2 {
+  width: 2.5rem;
+  padding-top: 1rem;
+}
+
 .some {
   display: flex;
   flex-direction: row;
@@ -523,6 +532,11 @@ button {
   background-image: url("media/aboutphoto4_mobile.png");
   width: 414px;
   height: 600px;
+}
+
+.contactusimg {
+  width: 414px;
+  height: 550px;
 }
 
 @media (min-width: 1024px) {

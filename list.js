@@ -32,7 +32,7 @@ function handleData(pieces) {
     copy.querySelector("h4").textContent = "€" + piece.price_gold;
     copy.querySelector("a").href += piece._id;
     //grab parent
-    const parent = document.querySelector("main");
+    const parent = document.querySelector(".products_list");
     //append it
     parent.appendChild(copy);
   });

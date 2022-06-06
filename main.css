@@ -159,9 +159,29 @@ a.shopnow2:active {
   font-style: normal;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav";
+}
+
+nav > .nav_nav {
+  grid-area: nav;
+  margin-left: auto;
+}
+
+nav > .nav_logo {
+  grid-area: logo;
+}
+
+nav > .nav_search {
+  grid-area: search;
+}
+
 .thirdparthp {
   text-align: center;
-  margin-bottom: 7rem;
+  /* margin-bottom: 7rem; */
   border-bottom: 1px solid #707070;
   border-top: 1px solid #707070;
   padding-bottom: 5rem;
@@ -271,6 +291,24 @@ p {
   padding-top: 0rem;
   border-bottom: 1px solid #707070;
   padding-bottom: 6rem;
+}
+
+.theprotector > .left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.theprotector > .right {
+  display: none;
+}
+
+.theprotector > .left > .protecth2,
+.theprotector > .left > .protecth3,
+.theprotector > .left > .protectprice,
+.theprotector > .left > .protectimg,
+.theprotector > .left > .shopnow2 {
+  margin: 0;
 }
 
 .protecth3 {
@@ -424,6 +462,14 @@ h6 {
   max-width: 100%;
 }
 
+.viewinfo {
+  display: flex;
+}
+
+.main_product_view {
+  display: flex;
+}
+
 .viewinfo p {
   margin-left: 0;
   font-size: 1.5rem;
@@ -436,6 +482,14 @@ h6 {
 .lastinfo p {
   margin-left: 0;
   font-size: 1.3rem;
+}
+
+nav > .nav_search > ul {
+  display: flex;
+}
+
+nav > .nav_search {
+  display: none;
 }
 
 button {
@@ -551,18 +605,61 @@ button {
   }
 
   nav {
-    display: grid;
+    /* display: grid;
     grid-template-columns: 1fr 1fr;
     border-bottom: 1px solid #707070;
     font-family: brandon-grotesque, sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo nav'; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav logo search";
+
+  }
+
+  nav > .nav_nav > ul > li {
+    margin-right: 20px;
+  }
+
+  nav > .nav_nav {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  nav > .nav_logo {
+    text-align: center;
+  }
+
+  nav > .nav_search {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
   }
 
   header nav ul {
     display: flex;
     justify-content: space-evenly;
     font-size: 2.2rem;
+  }
+
+  .onepiece {
+    display: grid;
+    
+  }
+
+  .onepiece > .single_product {
+    max-width: 50%;
+    background-color: red;
+  }
+
+  .products_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .searchicon {
@@ -680,10 +777,34 @@ button {
   }
 
   .theprotector {
-    text-align: left;
-    padding-top: 0.5rem;
-
+    display: flex;
+    padding-top: 2rem;
     padding-bottom: 4rem;
+  }
+
+  .theprotector > .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .theprotector > .left > .protecth2,
+  .theprotector > .left > .protecth3,
+  .theprotector > .left > .protectprice,
+  .theprotector > .left > .protectimg,
+  .theprotector > .left > .shopnow2 {
+    margin: 0;
+  }
+
+  .theprotector > .right {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .theprotector > .right > video {
+    height: 100%;
   }
 
   .protecth3 {
@@ -731,4 +852,11 @@ button {
 }
 
 @media (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media(min-width: 1450px) {
+  .products_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

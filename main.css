@@ -59,7 +59,7 @@ nav a:hover {
 }
 
 .searchicon {
-  width: 1.3rem;
+  width: 1rem;
   margin-right: 0.5rem;
 }
 
@@ -138,6 +138,7 @@ a.shopnow2:active {
   text-align: center;
   position: relative;
   top: 10rem;
+  
 }
 
 .secondparthp {
@@ -222,7 +223,7 @@ p {
 #listmainmargin {
   margin: 0 auto;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 0rem;
 }
 
 .onepiece {
@@ -232,6 +233,7 @@ p {
 
 .productimg {
   width: 18.5rem;
+
 }
 
 .goldphoto {
@@ -291,7 +293,7 @@ p {
 .price {
   font-size: 1rem;
   margin-top: 0.5rem;
-  margin-bottom: 0;
+  margin-bottom: 1.4em;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
   font-style: italic;
@@ -476,11 +478,14 @@ h6 {
 
 .hallmarkschart {
   font-size: 2rem;
+  margin-top: 2em;
 }
 
 .imgcharts {
   max-width: 100%;
   text-align: center;
+  margin-left: 37%;
+  margin-right: 50%;
 }
 
 .goldphoto {
@@ -493,6 +498,7 @@ h6 {
 
 .viewinfo {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .main_product_view {
@@ -534,11 +540,18 @@ button {
   font-size: 1rem;
 }
 
+.contact-us {
+  margin-top: 2em;
+  margin-left: -0.1em;
+}
+
 .buttonsgrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
   row-gap: 1rem;
+  margin-top: 5em;
+  margin-left: -6em;
 }
 
 .addtocart {
@@ -734,7 +747,7 @@ button {
     background-image: url("media/landingphoto_1920px.png");
   }
   .logo {
-    width: 11rem;
+    width: 10rem;
     margin-left: 1rem;
     text-align: right;
   }
@@ -754,16 +767,17 @@ button {
     grid-template-rows: 1fr;
     grid-template-areas: "nav logo search";
 
+
   }
 
   nav > .nav_nav > ul > li {
-    margin-right: 20px;
+    margin-right: 50px;
   }
 
   nav > .nav_nav {
     display: flex;
     align-items: center;
-    margin-left: 0;
+    margin-left: 1.1em;
   }
 
   nav > .nav_logo {
@@ -812,10 +826,12 @@ button {
     font-size: 2rem;
     margin-bottom: 3rem;
     margin-top: -3rem;
-    margin-left: -15rem;
+    margin-left: 30rem;
+    max-width:800px
   }
   .shopnow {
     font-size: 1.5rem;
+    margin-left: 23em;
   }
 
   .buttonquote {
@@ -828,6 +844,7 @@ button {
 
   .mainh2 {
     font-size: 2.5rem;
+   
   }
   .secondparthpgrid {
     display: grid;

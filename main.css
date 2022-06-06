@@ -132,7 +132,9 @@ a.shopnow2:active {
 }
 
 .space {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  font-size: 1.7rem;
+ 
 }
 
 .buttonquote {
@@ -596,10 +598,9 @@ button {
 @media (min-width: 1024px) {
   .landingphoto {
     background-image: url("media/landingphoto_1920px.png");
-    height: 1080px;
   }
   .logo {
-    width: 15rem;
+    width: 11rem;
     margin-left: 1rem;
     text-align: right;
   }
@@ -644,7 +645,7 @@ button {
   header nav ul {
     display: flex;
     justify-content: space-evenly;
-    font-size: 2.2rem;
+    font-size: 1.9rem;
   }
 
   .onepiece {
@@ -659,24 +660,27 @@ button {
 
   .products_list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: -3rem;
   }
 
   .searchicon {
-    width: 2.7rem;
+    width: 2rem;
     margin-right: 2.5rem;
   }
 
   .carticon {
-    width: 2.1rem;
+    width: 1.7rem;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
+    margin-top: -3rem;
+    margin-left: -15rem;
   }
   .shopnow {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .buttonquote {
     text-align: center;
@@ -687,7 +691,7 @@ button {
   }
 
   .mainh2 {
-    font-size: 4rem;
+    font-size: 3rem;
 
     margin-left: 30%;
     margin-right: 30%;
@@ -695,7 +699,7 @@ button {
   .secondparthpgrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 12rem;
+    column-gap: 10rem;
   }
 
   h3 {
@@ -704,10 +708,10 @@ button {
   }
 
   p {
-    font-size: 2rem;
+    font-size: 1.3rem;
     margin-left: 7rem;
     margin-right: 7rem;
-    line-height: 4rem;
+    
   }
 
   .productimg {
@@ -715,11 +719,11 @@ button {
   }
 
   .vishnubrahma {
-    font-size: 2.6rem;
+    font-size: 2.1rem;
   }
 
   .category {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
   }
 
   .price {
@@ -778,7 +782,7 @@ button {
 
   .theprotector {
     display: flex;
-    padding-top: 2rem;
+    padding-top: 7rem;
     padding-bottom: 4rem;
   }
 
@@ -805,6 +809,7 @@ button {
 
   .theprotector > .right > video {
     height: 100%;
+    
   }
 
   .protecth3 {

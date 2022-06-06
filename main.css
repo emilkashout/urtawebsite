@@ -129,7 +129,9 @@ a.shopnow2:active {
 }
 
 .space {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  font-size: 1.7rem;
+ 
 }
 
 .buttonquote {
@@ -156,9 +158,29 @@ a.shopnow2:active {
   font-style: normal;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo nav";
+}
+
+nav > .nav_nav {
+  grid-area: nav;
+  margin-left: auto;
+}
+
+nav > .nav_logo {
+  grid-area: logo;
+}
+
+nav > .nav_search {
+  grid-area: search;
+}
+
 .thirdparthp {
   text-align: center;
-  margin-bottom: 7rem;
+  /* margin-bottom: 7rem; */
   border-bottom: 1px solid #707070;
   border-top: 1px solid #707070;
   padding-bottom: 5rem;
@@ -289,6 +311,24 @@ p {
   padding-top: 0rem;
   border-bottom: 1px solid #707070;
   padding-bottom: 6rem;
+}
+
+.theprotector > .left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.theprotector > .right {
+  display: none;
+}
+
+.theprotector > .left > .protecth2,
+.theprotector > .left > .protecth3,
+.theprotector > .left > .protectprice,
+.theprotector > .left > .protectimg,
+.theprotector > .left > .shopnow2 {
+  margin: 0;
 }
 
 .protecth3 {
@@ -451,6 +491,14 @@ h6 {
   max-width: 100%;
 }
 
+.viewinfo {
+  display: flex;
+}
+
+.main_product_view {
+  display: flex;
+}
+
 .viewinfo p {
   margin-left: 0;
   font-size: 1.5rem;
@@ -463,6 +511,14 @@ h6 {
 .lastinfo p {
   margin-left: 0;
   font-size: 1.3rem;
+}
+
+nav > .nav_search > ul {
+  display: flex;
+}
+
+nav > .nav_search {
+  display: none;
 }
 
 button {
@@ -676,34 +732,74 @@ button {
 @media (min-width: 800px) {
   .landingphoto {
     background-image: url("media/landingphoto_1920px.png");
-    height: 1080px;
-    width: auto;
-    max-width: 100%;
-    background-size: cover;
-    background-position: center;
   }
   .logo {
-    width: 12rem;
+    width: 11rem;
     margin-left: 1rem;
     text-align: right;
   }
 
   nav {
-    display: grid;
-    grid-template-columns: 20% 80%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-bottom: 1px solid #707070;
+    font-family: brandon-grotesque, sans-serif;
+    font-weight: 400;
+    font-style: normal; */
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'logo nav'; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav logo search";
+
+  }
+
+  nav > .nav_nav > ul > li {
+    margin-right: 20px;
+  }
+
+  nav > .nav_nav {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  nav > .nav_logo {
+    text-align: center;
+  }
+
+  nav > .nav_search {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
   }
 
   header nav ul {
     display: flex;
     justify-content: space-evenly;
-    font-size: 1.7rem;
-    padding-right: 0;
-    padding-left: 8rem;
-    margin-top: 2.5rem;
+    font-size: 1.9rem;
   }
 
-  header nav .searchicon {
-    width: 1.8rem;
+  .onepiece {
+    display: grid;
+    
+  }
+
+  .onepiece > .single_product {
+    max-width: 50%;
+    background-color: red;
+  }
+
+  .products_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: -3rem;
+  }
+
+  .searchicon {
+    width: 2rem;
     margin-right: 2.5rem;
     margin-left: 4rem;
   }
@@ -715,6 +811,8 @@ button {
   h1 {
     font-size: 2rem;
     margin-bottom: 3rem;
+    margin-top: -3rem;
+    margin-left: -15rem;
   }
   .shopnow {
     font-size: 1.5rem;
@@ -838,10 +936,35 @@ button {
   }
 
   .theprotector {
-    text-align: l;
-    padding-top: 0.5rem;
-
+    display: flex;
+    padding-top: 7rem;
     padding-bottom: 4rem;
+  }
+
+  .theprotector > .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+  }
+
+  .theprotector > .left > .protecth2,
+  .theprotector > .left > .protecth3,
+  .theprotector > .left > .protectprice,
+  .theprotector > .left > .protectimg,
+  .theprotector > .left > .shopnow2 {
+    margin: 0;
+  }
+
+  .theprotector > .right {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+  }
+
+  .theprotector > .right > video {
+    height: 100%;
+    
   }
 
   .protecth3 {
@@ -1016,5 +1139,12 @@ button {
     display: grid;
     grid-template-columns: 45% 55%;
     padding-bottom: 0rem;
+  }
+}
+
+@media(min-width: 1450px) {
+  .products_list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

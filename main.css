@@ -13,12 +13,6 @@ main {
   font-style: normal;
 }
 
-#listmainmargin {
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 5rem;
-}
-
 .landingphoto {
   background-image: url("media/landingphoto.png");
   height: 896px;
@@ -35,11 +29,15 @@ main {
   margin-left: 1rem;
 }
 
+nav ul {
+  padding-left: 0;
+  padding-right: 1.2rem;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-grow: 2;
   border-bottom: 1px solid #707070;
   font-family: brandon-grotesque, sans-serif;
   font-weight: 400;
@@ -71,7 +69,6 @@ nav a:hover {
 
 ul {
   list-style-type: none;
-  margin-right: 1rem;
 }
 
 h1 {
@@ -199,6 +196,7 @@ nav > .nav_search {
   background-size: cover;
   background-position: center;
   max-width: 100%;
+  width: auto;
 }
 
 .video {
@@ -221,6 +219,12 @@ p {
   line-height: 2rem;
 }
 
+#listmainmargin {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
 .onepiece {
   text-align: center;
   align-items: center;
@@ -228,6 +232,20 @@ p {
 
 .productimg {
   width: 18.5rem;
+}
+
+.goldphoto {
+  width: 25rem;
+  text-align: center;
+}
+
+.silverphoto {
+  width: 25rem;
+  text-align: center;
+}
+
+.photos {
+  text-align: center;
 }
 
 .vishnubrahma {
@@ -434,7 +452,7 @@ h6 {
 
 .imgproductlist {
   background-image: url("media/imgproductlist_mobile.png");
-  width: 414px;
+  width: auto;
   height: 355px;
   margin: 0 auto;
   background-repeat: no-repeat;
@@ -451,6 +469,11 @@ h6 {
   font-size: 0.9rem;
 }
 
+.pieceslist {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .hallmarkschart {
   font-size: 2rem;
 }
@@ -460,7 +483,11 @@ h6 {
   text-align: center;
 }
 
-.goldphoto .silverphoto {
+.goldphoto {
+  max-width: 100%;
+}
+
+.silverphoto {
   max-width: 100%;
 }
 
@@ -532,7 +559,11 @@ button {
 
 .aboutphoto1 {
   background-image: url("media/aboutphoto1_mobile.png");
-  width: 414px;
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 600px;
 }
 
@@ -574,28 +605,131 @@ button {
 
 .aboutphoto2 {
   background-image: url("media/aboutphoto2_mobile.png");
-  width: 414px;
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 600px;
 }
 
 .aboutphoto3 {
   background-image: url("media/aboutphoto3_mobile.png");
-  width: 414px;
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 600px;
 }
 
 .aboutphoto4 {
   background-image: url("media/aboutphoto4_mobile.png");
-  width: 414px;
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
   height: 600px;
 }
 
-.contactusimg {
-  width: 414px;
-  height: 550px;
+.materialsphoto1 {
+  background-image: url("media/materialsphoto1_mobile.png");
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
 }
 
-@media (min-width: 1024px) {
+.materialsphoto2 {
+  background-image: url("media/materialsphoto2_mobile.png");
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.materialsphoto3 {
+  background-image: url("media/materialsphoto3_mobile.png");
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+}
+
+.materialsphoto1bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 3.8rem;
+}
+
+.materialsphoto2bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 5.5rem;
+}
+
+.materialsphoto3bg {
+  padding: 0.2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+  margin-top: 0;
+  position: relative;
+  top: 11rem;
+}
+
+.contactusimg {
+  width: auto;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+@media (min-width: 601px) and (max-width: 799px) {
+  .landingphoto {
+    background-image: url("media/landingphoto_601px.png");
+    height: 1000px;
+    width: auto;
+  }
+  .handsphoto {
+    max-width: 90%;
+    width: auto;
+  }
+  .imgproductlist {
+    background-image: url("media/imgproductlist_desktop.png");
+    height: 600px;
+    width: auto;
+  }
+
+  .shopallinfo {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .gridcontactus {
+    display: block;
+  }
+
+  .contactusimg {
+    height: 750px;
+  }
+}
+
+@media (min-width: 800px) {
   .landingphoto {
     background-image: url("media/landingphoto_1920px.png");
   }
@@ -667,72 +801,93 @@ button {
   .searchicon {
     width: 2rem;
     margin-right: 2.5rem;
+    margin-left: 4rem;
   }
 
   .carticon {
-    width: 1.7rem;
+    width: 1.4rem;
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
     margin-top: -3rem;
     margin-left: -15rem;
   }
   .shopnow {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
+
   .buttonquote {
     text-align: center;
     position: relative;
-    top: 8rem;
-    width: 800px;
-    left: 55%;
+    top: 5rem;
+    width: 75%;
+    left: 20%;
   }
 
   .mainh2 {
-    font-size: 3rem;
-
-    margin-left: 30%;
-    margin-right: 30%;
+    font-size: 2.5rem;
   }
   .secondparthpgrid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10rem;
+    grid-template-columns: 10% 40% 40% 10%;
+    column-gap: 1rem;
   }
 
   h3 {
-    font-size: 2.8rem;
-    margin-top: 5rem;
+    font-size: 2rem;
+    margin-top: 4rem;
   }
 
   p {
-    font-size: 1.3rem;
-    margin-left: 7rem;
-    margin-right: 7rem;
-    
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    line-height: 2.7rem;
   }
 
   .productimg {
-    width: 30rem;
+    width: 22rem;
   }
 
   .vishnubrahma {
-    font-size: 2.1rem;
+    font-size: 2rem;
   }
 
   .category {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .price {
-    font-size: 2.3rem;
+    font-size: 1.8rem;
   }
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .thirdparthp p {
+    font-size: 1.6rem;
+  }
+
   .thirdparthp {
     display: grid;
-    grid-template-columns: 40% 60%;
-    padding-bottom: 0;
+    grid-template-columns: 45% 55%;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+  }
+
+  .thirdparthp article {
+    margin-top: 20%;
+    margin-bottom: 20%;
+  }
+
+  .handsphoto {
+    margin-bottom: 20%;
+    margin-top: 20%;
   }
 
   .lastpart {
@@ -740,7 +895,7 @@ button {
   }
 
   .shopnow2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   footer li {
@@ -838,25 +993,153 @@ button {
 
   .imgproductlist {
     background-image: url("media/imgproductlist_desktop.png");
-    width: 1920px;
+
     height: 600px;
     margin: 0 auto;
+    width: auto;
   }
   .shopallinfo {
     padding-top: 4.5rem;
     color: #ffffff;
     font-size: 1.7rem;
   }
-}
 
-@media (min-width: 601px) and (max-width: 1023px) {
-  .landingphoto {
-    background-image: url("media/landingphoto_601px.png");
-    height: 962px;
+  .gridview {
+    display: grid;
+    grid-template-columns: 55% 45%;
+  }
+
+  .aboutphoto1 {
+    background-image: url("media/aboutphoto1.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .materialsphoto1 {
+    background-image: url("media/materialsphoto1.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .aboutphoto1bg {
+    position: relative;
+    top: 7rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .materialsphoto1bg {
+    position: relative;
+    top: 8rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .aboutphoto2bg {
+    margin: 2rem;
+    margin-top: 0;
+    position: relative;
+    top: 6rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .materialsphoto2bg {
+    position: relative;
+    top: 9rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .aboutphoto3bg {
+    margin: 2rem;
+    margin-top: 0;
+    position: relative;
+    top: 13rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .materialsphoto3bg {
+    position: relative;
+    top: 13rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .aboutphoto4bg {
+    margin: 2rem;
+    margin-top: 0;
+    position: relative;
+    top: 11rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+
+  .aboutphoto2 {
+    background-image: url("media/aboutphoto2.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .materialsphoto2 {
+    background-image: url("media/materialsphoto2.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .aboutphoto3 {
+    background-image: url("media/aboutphoto3.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .materialsphoto3 {
+    background-image: url("media/materialsphoto3.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .aboutphoto4 {
+    background-image: url("media/aboutphoto4.png");
+    max-width: 100%;
+    width: auto;
+  }
+
+  .gridcontactus {
+    display: grid;
+    grid-template-columns: 40% 60%;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+@media (min-width: 1280px) {
+  .thirdparthp {
+    padding-bottom: 0rem;
+  }
+
+  .handsphoto {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+  .imgproductlist {
+    background-image: url("media/imgproductlist_desktop.png");
+  }
+
+  .allinfoview {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+
+  .gridcontactus {
+    display: grid;
+    grid-template-columns: 45% 55%;
+  }
+
+  .thirdparthp {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding-bottom: 0rem;
+  }
 }
 
 @media(min-width: 1450px) {
